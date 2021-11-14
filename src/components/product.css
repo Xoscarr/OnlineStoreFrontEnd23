@@ -1,0 +1,8 @@
+.product-page {
+  background: white;
+  border: 1px solid rgb(7, 7, 7);
+  display: inline-block;
+  width: 260px;
+  margin: 10px 10px 5px o;
+  padding: 10px;
+}
