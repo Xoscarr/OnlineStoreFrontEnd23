@@ -1,8 +1,29 @@
 .product-page {
-  background: white;
   border: 1px solid rgb(7, 7, 7);
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: -1px 1px 5px 0 rgb(187, 187, 187);
+
   display: inline-block;
   width: 260px;
-  margin: 10px 10px 5px o;
+  height: 450px;
+  margin: 10px 10px 5px 0;
   padding: 10px;
+
+  vertical-align: top;
+  position: relative;
+}
+.product-page img {
+  margin: 0;
+  width: 230px;
+}
+.product-page h5 {
+  margin-top: -8px;
+}
+.product-page .category {
+  position: absolute;
+  right: 10px;
+  color: lightblue;
+  top: 5px;
+  font-size: 13px;
 }
