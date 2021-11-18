@@ -1,3 +1,9 @@
-.navbar h3{
-    color:darkblue;
+@import url("https://fonts.googleapis.com/css2?family=Cambo&family=Outfit:wght@600&display=swap");
+.navbar h3 {
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-family: "Cambo", serif;
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
 }

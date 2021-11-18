@@ -1,12 +1,12 @@
 import Footer from "./footer";
-import "./navBar.css"; 
+import "./navBar.css";
 
-function NavBar(){
-    return <div className="navbar"> 
-        <h3>Heading here</h3>
-        <div></div>
-       
-    </div>;
-
-}
-export default NavBar; 
+const NavBar = () => {
+  return (
+    <div className="navbar">
+      <h3 class=".bg-light.bg-gradient">Unite Apparel &reg;</h3>
+      <div></div>
+    </div>
+  );
+};
+export default NavBar;

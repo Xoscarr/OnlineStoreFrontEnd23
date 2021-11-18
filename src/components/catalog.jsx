@@ -25,7 +25,7 @@ const Catalog = () => {
 
   return (
     <div className="catalog">
-      <h3>Catalog Page</h3>
+      <h3>Men</h3>
       <ProdCount count={data.length}></ProdCount>
       <div className="product-container">
         {data.map((prod) => (

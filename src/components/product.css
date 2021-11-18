@@ -1,12 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Cambo&family=Outfit:wght@600&display=swap");
+
+* {
+  text-decoration: none;
+  background-color: white;
+  font-family: "Cambo", serif;
+  font-family: "Outfit", sans-serif;
+}
 .product-page {
   border: 1px solid rgb(7, 7, 7);
+  background-color: rgb(234, 237, 238);
   border-radius: 4px;
   display: inline-block;
-  box-shadow: -1px 1px 5px 0 rgb(187, 187, 187);
+  box-shadow: -1px 1px 3px 0 rgb(17, 17, 17);
 
   display: inline-block;
   width: 260px;
-  height: 450px;
+  height: 500px;
   margin: 10px 10px 5px 0;
   padding: 10px;
 
@@ -17,13 +26,14 @@
   margin: 0;
   width: 230px;
 }
-.product-page h5 {
-  margin-top: -8px;
+.product-info {
+  position: relative;
+  top: 20px;
 }
+
 .product-page .category {
   position: absolute;
   right: 10px;
-  color: lightblue;
   top: 5px;
   font-size: 13px;
 }
