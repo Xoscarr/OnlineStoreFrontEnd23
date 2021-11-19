@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cambo&family=Outfit:wght@600&display=swap");
 
-* {
-  text-decoration: none;
-  background-color: white;
-  font-family: "Cambo", serif;
-  font-family: "Outfit", sans-serif;
-}
 .product-page {
   border: 1px solid rgb(7, 7, 7);
   background-color: rgb(234, 237, 238);
@@ -21,6 +15,10 @@
 
   vertical-align: top;
   position: relative;
+
+  text-decoration: none;
+  font-family: "Cambo", serif;
+  font-family: "Outfit", sans-serif;
 }
 .product-page img {
   margin: 0;

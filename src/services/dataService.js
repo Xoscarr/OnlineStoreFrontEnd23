@@ -4,7 +4,7 @@ const data = [
     title: "t-shirts",
     catagory: "tops",
     image: "tshirt.jpg",
-    price: 25.99,
+    price: 35.99,
     stock: 8,
     minium: 1,
   },

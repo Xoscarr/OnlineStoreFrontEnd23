@@ -1,29 +1,37 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react";
+import "./quantityPicker.css";
 
-const QuantityPicker = () => {
-    const [quantity, setQuantity] = useState(1);
+const QuantityPicker = (props) => {
+  const [quantity, setQuantity] = useState(1);
 
-    const increase = () => {
-        console.log("+ button clicked");
-        setQuantity(quantity + 1);
-    };
-    const decrease = () => {
-        console.log("- button clicked"); 
-        if  (quantity > 1){
-        setQuantity(quantity - 1);  
-        }
-            
-    };
-    const test1 = () => {
-        return "9.99";
-    };
+  const increase = () => {
+    let val = quantity + 1;
+    console.log("+ button clicked");
+    setQuantity(quantity + 1);
+    props.onQuantityChange(val); //excute the fn received on props
+  };
+  const decrease = () => {
+    let val = quantity - 1;
+    console.log("- button clicked");
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+      props.onQuantityChange(val);
+    }
+  };
+  const test1 = () => {
+    return "9.99";
+  };
 
-    return ( <div className="quantity-picker">
-        <button className="btn btn-sm btn-info" onClick={increase}>+</button>
-        <label>{quantity}</label>
-        <button className="btn btn-sm btn-info" onClick={decrease}>-</button>
-        
+  return (
+    <div className="quantity-picker">
+      <button className="btn btn-sm btn-info" onClick={increase}>
+        +
+      </button>
+      <label>{quantity}</label>
+      <button className="btn btn-sm btn-info" onClick={decrease}>
+        -
+      </button>
     </div>
-    );
-}; 
- export default QuantityPicker; 
+  );
+};
+export default QuantityPicker;
